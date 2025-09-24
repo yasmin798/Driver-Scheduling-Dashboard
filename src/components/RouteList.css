@@ -1,0 +1,146 @@
+.route-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.route-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-left: 6px solid;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.route-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+
+.route-card.assigned {
+  border-left-color: #2ecc71;
+}
+
+.route-card.unassigned {
+  border-left-color: #e74c3c;
+}
+
+.route-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.route-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.status-badge {
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.status-badge.assigned {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+}
+
+.status-badge.unassigned {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.route-details {
+  margin-bottom: 1.5rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.route-details p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.route-details strong {
+  color: #2c3e50;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.route-assignment {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.route-assignment p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.route-assignment strong {
+  color: #2c3e50;
+  min-width: 80px;
+}
+
+.driver-select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.9);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.driver-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+@media (max-width: 768px) {
+  .route-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .route-assignment {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .driver-select {
+    min-width: 100%;
+  }
+  
+  .route-details strong {
+    min-width: 100px;
+  }
+}
