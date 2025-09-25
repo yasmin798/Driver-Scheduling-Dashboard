@@ -25,7 +25,7 @@ A React-based frontend app for managing drivers and routes, with assignment trac
 4. Build for production: `npm run build`
 
 ## Deployment
-- **Live URL:** [Vercel URL, e.g., https://driver-scheduling-dashboard-yourusername.vercel.app]
-- **GitHub Repo:** [GitHub URL, e.g., https://driver-scheduling-dashboard-ceagnf5dq.vercel.app/]
+- **Live URL:** [Vercel URL, e.g., https://driver-scheduling-dashboard-ceagnf5dq.vercel.app/]
+- **GitHub Repo:** [GitHub URL, e.g., https://github.com/yasmin798/Driver-Scheduling-Dashboard]
 
 Built with React and Vite.
