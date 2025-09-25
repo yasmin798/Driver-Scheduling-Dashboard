@@ -2,10 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
@@ -17,10 +13,6 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)\\.(js|css|png|jpg|svg)",
-      "dest": "/$1.$2"
     }
   ]
 }
